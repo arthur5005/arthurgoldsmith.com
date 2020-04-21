@@ -1,0 +1,13 @@
+{
+  "name": "node-server",
+  "version": "0.0.1",
+  "description": "Arthur Goldsmith's Node Server",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "ssh2": "^0.8.9",
+    "utf8": "^3.0.0"
+  }
+}

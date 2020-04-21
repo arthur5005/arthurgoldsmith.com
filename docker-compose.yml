@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  agoldsmith-ssh:
+    build:
+      context: './ssh-server/'
+      dockerfile: 'Dockerfile'
+    ports:
+      - '2222:2222'
+  agoldsmith-node:
+     build:
+      context: './node-server/'
+      dockerfile: 'Dockerfile'
+    ports:
+      - '8000:8000'

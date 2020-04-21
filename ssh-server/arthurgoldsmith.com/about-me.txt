@@ -1,0 +1,22 @@
+[36m[6C___[11C___[11C___[11C___[11C___[20C___[11C___
+[5C/\  \[9C/\  \[9C/\  \[9C/\__\[9C/\  \[18C/\__\[9C/\  \
+    /::\  \[7C/::\  \[7C/::\  \[7C/:/  /[9C\:\  \[16C/::|  |[7C/::\  \
+[0m  [1;36m /:/\:\  \[5C/:/\:\  \[5C/:/\:\  \[5C/:/  /[11C\:\  \[14C/:|:|  |[6C/:/\:\  \
+[35m  /::\~\:\  \   /::\~\:\__\   /:/  \:\  \   /:/  /  ___[7C/::\  \[12C/:/|:|__|__   /::\~\:\  \
+ /:/\:\ \:\__\ /:/\:\ \:|__| /:/__/ \:\__\ /:/__/  /\__\[5C/:/\:\__\[10C/:/ |::::\__\ /:/\:\ \:\__\
+[31m \/__\[35m:[31m\/:/  / \:\~\:\[35m/[31m:/  [35m/ \:\  \ [31m/:/  / \:\  \ /:/  /    /:/  \/__/[10C\/__/~~/:/  / \:\~\:\ \/__/
+[6C[33m\[31m::/  /   \:\ \:[33m:[31m/  /   \:\  /:/  /   \:\  /:/  /    /:/  /[21C/:/  /   \:\ \:\__\
+[6C[33m/[31m:/  /[5C\:\/:[33m/[31m  /[5C\:\/:/  /[5C\:\/:/  /[5C\/__/[21C/:/  /[5C\:\ \/__/
+[33m[5C/:/  /[7C\::/__/ [31m[6C\::/ [33m /[7C\::/  /[31C/:/  /[7C\:\__\
+[5C\/__/[9C~~[12C\/__/[9C\/__/[32C\/__/[9C\/__/
+
+[0mI am a software developer, with a bachelor CS and a minor economics. I'm a fullstack devleoper, with a ton of experience
+creating rich user experiences and in the development and use of component frameworks.
+
+I currently reside in Vancouver BC, Canada. I am fortunate to hold multiple citizenships which allow me to work in Canada,
+the United States and throughout Europe.
+
+I am an active member, and for a time, was Vice President of Greater Vancouver Interactive Arts Society (GVIAS),
+a not-for-profit society created to promote community-based interactive arts in Greater Vancouver and British Columbia.
+GVIAS's mission is to encourage interactive and participatory experiences in the spirit of the 10 principles of Burning Man.
+I now assist in facilitating technology needs surrounding GVIAS and GVIAS's flagship festival event, host to 1600 participants.
