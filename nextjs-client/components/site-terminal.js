@@ -43,7 +43,7 @@ export default class SiteTerminal extends React.Component {
   }
   
   componentDidMount() {
-    this.socket = io('http://localhost:8000');
+    this.socket = io(process.env.WEBSOCKET_HOST || 'http://localhost:8080');
     this.terminal.open(this.termRef.current);
 
     this.terminal.onData((data) => {
