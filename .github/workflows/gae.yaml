@@ -40,10 +40,6 @@ jobs:
       run: |
         node node-server/scripts/add-secrets.js
 
-    - name: gcloud login
-      run: |
-        gcloud --quiet auth login
-
     # Deploy App to App Engine
     - name: Deploy
       run: |
