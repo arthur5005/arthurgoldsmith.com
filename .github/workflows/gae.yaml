@@ -25,22 +25,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v1
 
-      # Setup and configure gcloud CLI
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
-        with:
-          version: '286.0.0'
-          project_id: ${{ secrets.GC_PROJECT }}
-          service_account_email: ${{ secrets.GC_SA_EMAIL }}
-          service_account_key: ${{ secrets.GC_SA_KEY }}
+    # Setup gcloud CLI
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '286.0.0'
+        service_account_email: ${{ secrets.GCE_SA_EMAIL }}
+        service_account_key: ${{ secrets.GCE_SA_KEY }}
+        project_id: ${{ secrets.GCE_PROJECT }}
 
-      - name: Add secrets to app.yaml
-        run: |
-          node node-server/scripts/add-secrets.js
+    - name: Add secrets to app.yaml
+      run: |
+        node node-server/scripts/add-secrets.js
 
-      # Deploy App to App Engine
-      - name: Deploy
-        run: |
-          cd node-server/app && gcloud app deploy
+    - name: gcloud login
+      run: |
+        gcloud --quiet auth login
+
+    # Deploy App to App Engine
+    - name: Deploy
+      run: |
+        cd node-server/app && gcloud app deploy
