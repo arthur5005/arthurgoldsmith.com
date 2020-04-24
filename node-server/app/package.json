@@ -9,5 +9,11 @@
     "socket.io": "^2.3.0",
     "ssh2": "^0.8.9",
     "utf8": "^3.0.0"
+  },
+  "engines": {
+    "node": "12.x.x"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

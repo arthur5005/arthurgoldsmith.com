@@ -1,4 +1,3 @@
-// const fs = require("fs");
 const express = require("express");
 const http = require("http");
 const SSHClient = require("ssh2").Client;
@@ -6,7 +5,7 @@ const utf8 = require("utf8");
 
 const app = express();
 const server = http.createServer(app);
-server.listen(8000);
+server.listen(process.env.PORT || "8080");
 
 const io = require("socket.io")(server);
 
@@ -19,11 +18,12 @@ const sshWindowSettings = {
 };
 
 io.on("connection", function(socket) {
+  socket.emit("data", "\r\n*** SOCKET CONNECTION MADE ***\r\n");
+
   const ssh = new SSHClient();
 
   ssh.on("ready", function() {
-
-    socket.emit("data", "\r\n*** CONNECTION ESTABLISHED ***\r\n");
+    socket.emit("data", "\r\n*** SSH CONNECTION ESTABLISHED ***\r\n");
     connected = true;
 
     ssh.shell(sshWindowSettings, function(err, stream) {
@@ -58,13 +58,14 @@ io.on("connection", function(socket) {
       "data",
       "\r\n*** CONNECTION ERROR: " + err.message + " ***\r\n"
     );
-  })
+  });
   
+  socket.emit("data", "\r\n*** CALLING SSH.CONNECT ***\r\n");
   ssh.connect({
-    host: "agoldsmith-ssh", //TODO: Environment Variable
-    port: "2222", //TODO: Environment Variable
-    username: "visitor", //TODO: Environment Variable
-    password: "visitor" //TODO: Environment Variable
+    host: process.env.SSH_HOST || "agoldsmith-ssh", 
+    port: process.env.SSH_PORT || "2222", 
+    username: process.env.SSH_USERNAME || "visitor",
+    password: process.env.SSH_PASSWORD || "visitor"
     // privateKey: require("fs").readFileSync("PATH OF KEY ") // <---- Uncomment this if you want to use privateKey ( Example : AWS )
   });
 });
