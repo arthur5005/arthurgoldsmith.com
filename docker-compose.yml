@@ -6,8 +6,9 @@ services:
       dockerfile: 'Dockerfile'
     ports:
       - '2222:2222'
+
   agoldsmith-node:
-     build:
+    build:
       context: './node-server/'
       dockerfile: 'Dockerfile'
     ports:

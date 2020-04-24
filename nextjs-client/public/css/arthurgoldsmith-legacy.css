@@ -1,0 +1,1220 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p547@global/gems/compass-core-1.0.0.rc.0/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes agPopup {
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes agPopup {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes agPopup {
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-moz-keyframes agFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes agFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes agFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes agFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes agFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes agFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-moz-keyframes agFlash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes agFlash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes agFlash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes agShake {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@-webkit-keyframes agShake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@keyframes agShake {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-2px);
+    -ms-transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@-moz-keyframes agBounceIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  40% {
+    opacity: 1;
+    -moz-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+  }
+  60% {
+    -moz-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes agBounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+  }
+  60% {
+    -webkit-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes agBounceIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3, 0.3);
+    -ms-transform: scale(0.3, 0.3);
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  40% {
+    opacity: 1;
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+  }
+  60% {
+    -moz-transform: scale(0.95, 0.95);
+    -ms-transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes agPopIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  70% {
+    opacity: 1;
+    -moz-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes agPopIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes agPopIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3, 0.3);
+    -ms-transform: scale(0.3, 0.3);
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  70% {
+    opacity: 1;
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes agTada {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -moz-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+@-webkit-keyframes agTada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes agTada {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+    -ms-transform: scale(0.9) rotate(-3deg);
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+    -ms-transform: scale(1.1) rotate(-3deg);
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+@-moz-keyframes agFlipInX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -moz-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -moz-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes agFlipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes agFlipInX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -moz-transform: perspective(400px) rotateX(-10deg);
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -moz-transform: perspective(400px) rotateX(10deg);
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes agFlipOutX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes agFlipOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@keyframes agFlipOutX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes agFlipOutDown {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes agFlipOutDown {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    opacity: 0;
+  }
+}
+@keyframes agFlipOutDown {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg) scale(1);
+    -ms-transform: perspective(400px) rotateX(0deg) scale(1);
+    -webkit-transform: perspective(400px) rotateX(0deg) scale(1);
+    transform: perspective(400px) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    -ms-transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    -webkit-transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    transform: perspective(400px) rotateX(-20deg) scale(0.9);
+    opacity: 0;
+  }
+}
+@-moz-keyframes agFadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes agFadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes agFadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes agFadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes agFadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes agFadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes agFadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-80px);
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes agFadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes agFadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-80px);
+    -ms-transform: translateX(-80px);
+    -webkit-transform: translateX(-80px);
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes agFadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes agFadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes agFadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes agFadeOutDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@-webkit-keyframes agFadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes agFadeOutDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@-moz-keyframes agFadeOutUp {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes agFadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes agFadeOutUp {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@-moz-keyframes agLand {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes agLand {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes agLand {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+/* line 4, ../arthurgoldsmith-compass/sass/_main.scss */
+html {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* line 10, ../arthurgoldsmith-compass/sass/_main.scss */
+.page-wrapper {
+  overflow: hidden;
+}
+
+/* line 14, ../arthurgoldsmith-compass/sass/_main.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 18, ../arthurgoldsmith-compass/sass/_main.scss */
+p {
+  margin-bottom: 30px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+/* line 25, ../arthurgoldsmith-compass/sass/_main.scss */
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 32, ../arthurgoldsmith-compass/sass/_main.scss */
+h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* line 38, ../arthurgoldsmith-compass/sass/_main.scss */
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 43, ../arthurgoldsmith-compass/sass/_main.scss */
+.wrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+/* line 48, ../arthurgoldsmith-compass/sass/_main.scss */
+.wrapper > section {
+  padding: 60px 20px;
+}
+
+/* line 54, ../arthurgoldsmith-compass/sass/_main.scss */
+div.arthur-goldsmith {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 61, ../arthurgoldsmith-compass/sass/_main.scss */
+h1 {
+  font-weight: 400;
+}
+
+/* line 65, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.arthur {
+  font-size: 48px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  line-height: 100%;
+  -moz-animation-name: agFadeInDown;
+  -webkit-animation-name: agFadeInDown;
+  animation-name: agFadeInDown;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 74, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.goldsmith {
+  font-size: 32px;
+  line-height: 100%;
+  -moz-animation-name: agFadeInUp;
+  -webkit-animation-name: agFadeInUp;
+  animation-name: agFadeInUp;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 81, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.arthur:after {
+  display: block;
+  content: " ";
+  background-color: #FFF;
+  width: 200px;
+  height: 5px;
+  margin-top: 3px;
+  position: absolute;
+  margin-left: calc(50% - 100px);
+}
+
+/* line 92, ../arthurgoldsmith-compass/sass/_main.scss */
+div.software-developer {
+  width: 940px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -moz-animation-name: agFlipInX;
+  -webkit-animation-name: agFlipInX;
+  animation-name: agFlipInX;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 100, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.software-developer {
+  font-size: 72px;
+}
+
+/* line 104, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.with-expertise {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.37px;
+}
+
+/* line 110, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.and {
+  font-size: 72px;
+}
+
+/* line 114, ../arthurgoldsmith-compass/sass/_main.scss */
+h1.user-interface-design {
+  font-size: 56px;
+}
+
+/* line 118, ../arthurgoldsmith-compass/sass/_main.scss */
+nav {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  margin-bottom: 100px;
+}
+/* line 125, ../arthurgoldsmith-compass/sass/_main.scss */
+nav ul li {
+  display: block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* line 134, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black {
+  background-color: #000;
+  color: #FFF;
+}
+/* line 137, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black p {
+  color: #CCC;
+}
+/* line 141, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black a, div.black a:visited, div.black a:active, div.black a:link {
+  color: #FFF;
+  text-decoration: underline;
+}
+/* line 146, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black a:hover {
+  text-decoration: underline;
+}
+/* line 150, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black .button {
+  background-color: white;
+  color: black !important;
+}
+/* line 154, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black ::selection {
+  background: #467a9f;
+  /* WebKit/Blink Browsers */
+}
+/* line 157, ../arthurgoldsmith-compass/sass/_main.scss */
+div.black ::-moz-selection {
+  background: #467a9f;
+  /* Gecko Browsers */
+}
+
+/* line 162, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white {
+  background-color: #FFF;
+}
+/* line 164, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white p {
+  color: #555;
+}
+/* line 168, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white a, div.white a:visited, div.white a:active, div.white a:link {
+  color: #000;
+  text-decoration: underline;
+}
+/* line 173, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white a:hover {
+  text-decoration: underline;
+}
+/* line 177, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white .button {
+  background-color: black;
+  color: white !important;
+  text-decoration: none !important;
+}
+/* line 183, ../arthurgoldsmith-compass/sass/_main.scss */
+div.white .button:hover {
+  background-color: #333 !important;
+}
+
+/* line 189, ../arthurgoldsmith-compass/sass/_main.scss */
+#nav-buttons .nav-button img:hover {
+  margin-top: -25px;
+}
+
+/* line 193, ../arthurgoldsmith-compass/sass/_main.scss */
+.nav-button img {
+  -moz-transition-property: margin-top;
+  -o-transition-property: margin-top;
+  -webkit-transition-property: margin-top;
+  transition-property: margin-top;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/* line 198, ../arthurgoldsmith-compass/sass/_main.scss */
+.nav-button-text {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 204, ../arthurgoldsmith-compass/sass/_main.scss */
+.nav-button.nav-button-hover .nav-button-text {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* line 209, ../arthurgoldsmith-compass/sass/_main.scss */
+.selfie {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 215, ../arthurgoldsmith-compass/sass/_main.scss */
+.ag-smaller-iframe {
+  padding: 80% 66px 0 13px !important;
+}
+
+/* line 220, ../arthurgoldsmith-compass/sass/_main.scss */
+.button {
+  display: inline-block;
+  font-size: 36px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+/* line 227, ../arthurgoldsmith-compass/sass/_main.scss */
+.thumb {
+  margin: 5px;
+  margin-bottom: 30px;
+  -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* line 233, ../arthurgoldsmith-compass/sass/_main.scss */
+input[type="text"], textarea {
+  background-color: #FFFFFF;
+  border: 3px solid #555555;
+  border-radius: 5px;
+  color: #555555;
+  font: inherit;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 243, ../arthurgoldsmith-compass/sass/_main.scss */
+input[type="submit"] {
+  display: inline-block;
+  font-size: 36px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  color: black !important;
+  font: inherit;
+  border: none;
+}
+
+/* line 254, ../arthurgoldsmith-compass/sass/_main.scss */
+label {
+  display: block;
+  font-size: inherit;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+/* line 261, ../arthurgoldsmith-compass/sass/_main.scss */
+.submit {
+  margin-top: 15px;
+}
+
+/* line 266, ../arthurgoldsmith-compass/sass/_main.scss */
+.flash-message {
+  font-size: 36px;
+  line-height: 64px;
+  background-color: black;
+  color: white !important;
+  text-align: center;
+}
+
+/* line 274, ../arthurgoldsmith-compass/sass/_main.scss */
+.image-link {
+  text-decoration: none !important;
+}
