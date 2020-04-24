@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 server.listen(process.env.PORT || "8080");
 
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, { origins: '*:*'});
 
 const sshWindowSettings = { 
   rows: 24, 

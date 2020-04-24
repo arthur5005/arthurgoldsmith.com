@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "WEBSOCKET_HOST": "http://localhost:8080"
+    }
+  }
+}
