@@ -30,7 +30,7 @@ export default class SiteTerminal extends React.Component {
     }
 
     this.socket.on('data', (data) => {
-      console.log('Backend Socket: ', data);
+      console.debug('Backend Socket: ', data);
       this.terminal.write(new Uint8Array(data));
     });
 
@@ -47,17 +47,17 @@ export default class SiteTerminal extends React.Component {
     this.terminal.open(this.termRef.current);
 
     this.terminal.onData((data) => {
-      console.log('Local Terminal: ', data);
-      this.isWired && socket.emit("data", data);
+      console.debug('Local Terminal: ', data);
+      this.isWired && this.socket.emit('data', data);
     });
 
-    this.socket.on("connect", () => {
-      this.terminal.write("\r\n*** Connected to backend ***\r\n");
+    this.socket.on('connect', () => {
+      this.terminal.write('\r\n*** Connected to backend ***\r\n');
       this.wireSocket();
     });
 
-    this.socket.on("disconnect", (reason) => {
-      this.terminal.write("\r\n*** Disconnected from backend***\r\n");
+    this.socket.on('disconnect', (reason) => {
+      this.terminal.write('\r\n*** Disconnected from backend***\r\n');
       this.unWireSocket();
     });
   }
