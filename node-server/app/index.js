@@ -68,9 +68,9 @@ io.on('connection', function(socket) {
   };
 
   socket.emit('data', '\r\n*** CALLING SSH.CONNECT ***\r\n');
-  socket.emit('data', `\r\n*** host: ${config.host}  ***\r\n`);
-  socket.emit('data', `\r\n*** port: ${config.port}  ***\r\n`);
-  socket.emit('data', `\r\n*** username: ${config.username}  ***\r\n`);
+  socket.emit('data', `\r\n*** host: ${sshConfig.host}  ***\r\n`);
+  socket.emit('data', `\r\n*** port: ${sshConfig.port}  ***\r\n`);
+  socket.emit('data', `\r\n*** username: ${sshConfig.username}  ***\r\n`);
 
   ssh.connect(sshConfig);
 });
