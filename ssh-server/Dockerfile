@@ -56,7 +56,7 @@ ADD /motd.ans /home/www/etc/motd
 
 # Creates the visitors home directory
 RUN chown -R visitor:visitor /home/www/home/arthurgoldsmith.com \
-  && chmod -R 0400 /home/www/home/arthurgoldsmith.com
+  && chmod -R 0700 /home/www/home/arthurgoldsmith.com
 
 # Copies the necessary binaries to have fun & navigate while on the website
 RUN cp -v /bin/ls /home/www/bin/ \
