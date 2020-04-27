@@ -19,6 +19,12 @@ on:
     branches:
       - master
 
+env:
+  SSH_HOST: ${{ secrets.SSH_HOST }} 
+  SSH_PORT: ${{ secrets.SSH_PORT }}
+  SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+  SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+
 jobs:
   setup-build-deploy:
     name: Deploy
