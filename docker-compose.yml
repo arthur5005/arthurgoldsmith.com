@@ -4,12 +4,11 @@ services:
     build:
       context: './ssh-server/'
       dockerfile: 'Dockerfile'
+    volumes:
+      - ./ssh-server/node-app:/home/node/app:delegated
     ports:
+      - '8080:80'
       - '2222:2222'
-
-  agoldsmith-node:
-    build:
-      context: './node-server/'
-      dockerfile: 'Dockerfile'
-    ports:
-      - '8000:8000'
+    environment:
+      - NODE_ENV=development
+    command: /entrypoint-dev.sh

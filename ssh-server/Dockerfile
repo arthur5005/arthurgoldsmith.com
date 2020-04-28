@@ -1,5 +1,7 @@
-FROM alpine:3.5
+FROM node:13-alpine3.10
 MAINTAINER Arthur Goldsmith <arthur.goldsmith@gmail.com>
+
+#### SSH SERVICE ####
 
 # Add SSH
 RUN apk --update add --no-cache openssh bash ncurses-terminfo \
@@ -33,7 +35,7 @@ RUN mkdir -p /home/www/bin && cp -v /bin/bash /home/www/bin/
 RUN mkdir -p /home/www/lib && mkdir -p /home/www/usr/lib
 RUN mkdir -p /home/www/usr/share
 RUN cp -v /lib/ld-musl-x86_64.so.1 /home/www/lib/
-RUN cp -v /usr/lib/libreadline.so.6 /home/www/usr/lib/
+RUN cp -v /usr/lib/libreadline.so.8 /home/www/usr/lib/
 RUN cp -v /usr/lib/libncursesw.so.6 /home/www/usr/lib/
 RUN cp -r /usr/share/terminfo /home/www/usr/share/
 
@@ -56,11 +58,26 @@ ADD /motd.ans /home/www/etc/motd
 
 # Creates the visitors home directory
 RUN chown -R visitor:visitor /home/www/home/arthurgoldsmith.com \
-  && chmod -R 0700 /home/www/home/arthurgoldsmith.com
+  && chmod -R u-w /home/www/home/arthurgoldsmith.com
 
 # Copies the necessary binaries to have fun & navigate while on the website
 RUN cp -v /bin/ls /home/www/bin/ \
   && cp -v /bin/cat /home/www/bin/
 
-EXPOSE 2222
-CMD ["/usr/sbin/sshd","-D"]
+#### NODE SERVICE ####
+ADD ./node-app /home/node/app
+WORKDIR /home/node/app
+RUN npm install
+RUN export NODE_ENV=production
+
+EXPOSE 80 2222
+
+WORKDIR /
+
+COPY entrypoint.sh entrypoint.sh
+COPY entrypoint-dev.sh entrypoint-dev.sh
+
+RUN  chmod 755 /entrypoint.sh
+RUN  chmod 755 /entrypoint-dev.sh
+
+CMD /entrypoint.sh

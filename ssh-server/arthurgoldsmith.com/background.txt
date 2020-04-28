@@ -1,42 +1,53 @@
 
-[1;36m
+[1;36m  _______   ________   ______   ___   ___
+/_______/\ /_______/\ /_____/\ /___/\/__/\
+\::: _  \ \\::: _  \ \\:::__\/ \::.\ \\ \ \
+[32m \::(_)  \/_\::(_)  \ \\:\ \  __\:: \/_) \ \
+  \::  _  \ \\:: __  \ \\:\ \/_/\\:. __  ( (
+[33m [32m  \::(_)  \ \\:.\ \[33m  \ \\:[32m\_\ \[33m \\:[32m [33m\ )[32m  [33m\ \
+ ___\_______\/_\__\/\__\/_\_____\/ \__\/\__\/ __    ______
+/______/\  /_____/\  /_____/\ /_/\/_/\ /__/\ /__/\ /_____/\
+\::::__\/__\:::_ \ \ \:::_ \ \\:\ \:\ \[31m\::\_\\  \ \\:::_ \ \
+[33m [31m\:\ /____/\\:(_) ) )_\:\ \ \ \\:\ \:\ \\:. `-\  \ \\:\ \ \ \
+[0;35m [1;31m \:\\_  _\/ \: __ `\ \\:\ \ \ \\:\ \:\ \\:. _    \ \\:\ \ \ \
+[35m   \:\_\ \ \  \ \ `\ \ \\:\_\ \ \\[31m:\_\:\ [35m\\. \`-\  \ \\:\/.:| |
+    \_____\/   \_\/ \_\/ \_____\/ \_____\/ \__\/ \__\/ \____/_/
 
-    ,---,.  [32m[23C[33m[8C,-.
-[36m  ,'  .'  \ [32m[23C[33m    ,--/ /|[12C[31m[22C[0m  [31m[18C[35m[15C,---,
-[1;36m,---.' .' | [32m[23C[33m  ,--. :/ |[12C[31m    __  ,-.    ,---.   [0m [31m[8C,--,[6C[35m  ,---,[6C,---.'|
-[1;36m|   |  |: |  [32m[22C[33m  :  : ' /[5C,----._,[31m. ,' ,'/ /|   '   ,'\   [0;31m[6C,'_ /|    ,-[35m+-. /  |[5C|   | :
-[1;36m:   :  :  /    [32m,--.--.[7C,---.  [33m |  '  /[5C/   /  ' [31m/ '  | |' |  /   /   |  [0;31m .--. |  | :   ,--[35m.'|'   |[5C|   | |
-[1;36m:   |    ;    /  [32m[5C\[5C/[5C\ [33m '  |  :    |   :[5C|[31m |  |   ,' .   ; ,. : ,[0;31m'_ /| :  . |  |   | [35m ,"' |   ,--.__| |
-[1;36m|   :[5C\  .--. [32m .-. |   /    / '  [33m|  |   \   |   | .\  . [31m'  :  /   '   | |: : |[0;31m  ' | |  . .  |   | /[35m  | |  /   ,'   |
-[1;36m|   |   . |   \__\/: [32m. .  .    ' /   '[33m  : |. \  .   ; ';  | |[31m  | '    '   | .; : |  [0;31m| ' |  | |  |   | | [35m | | .   '  /  |
-[1;36m'   :  '; |   ," .--.; [32m|  '   ; :__  |[33m  | ' \ \ '   .   . | ;  [31m: |    |   :    | :  [0;31m| : ;  ; |  |   | | [37m [35m|/  '   ; |:  |
-[1;36m|   |  | ;   /  /  ,.  | [32m '   | '.'| ' [33m : |--'   `---`-'| | |  [31m, ;[5C\   \  /  '  [0;31m:  `--'   \ |   | |--'[37m [35m  |   | '/  '
-[1;36m|   :   /   ;  :   .'   \ [32m|   :    : ;  [33m|,'[6C.'__/\_: |  ---[31m'[7C`----'   :  [0;31m,[6C.-./ |   |/    [37m  [35m |   :    :|
-[1;36m|   | ,'    |  ,[5C.-./  \ [32m  \  /  '--[33m'[8C|   :    :[6C[31m[17C`--[0;31m`----'[5C'---'[6C[37m [35m  \   \  /
-[1;36m`----'[7C`--`---'[7C`-[32m---'[7C[33m[9C\   \  /[7C[31m[20C[0;31m[22C[37m   [35m `----'
-[37m [1;36m[30C[32m[11C[33m[9C`--`-'
+[1;36mI've built using: Angular, React, React-Native, Ember,
+ Node-Express, Rails, CakePHP, Wordpress, Drupal and much more.[0m
+The breadth of my software development experience is in web based
+ applications and component frameworks. 
 
-[1;36mI've built using: Angular, React, React-Native, Ember, Node-Express, Rails, CakePHP, Wordpress, Drupal and much more.[0m
-The breadth of my software development experience is in web based applications and component frameworks. 
-My recent experience working on a monolithic application for the past 5 years has lead me to take an interest in the 
-CQRS and Event Sourcing and will likely make use of the pattern as soon as a I find time and a good application for it; 
-I'm always on the lookout for new ways to make better software.
+My recent experience working on a monolithic application for the 
+past 5 years has lead me to take an interest in the CQRS and 
+Event Sourcing and will likely make use of the pattern as soon 
+as a I find time and a good application for it; I'm always on 
+the lookout for new ways to make better software.
 
-You can find a compressed timeline of my work experience on my LinkedIn [https://www.linkedin.com/in/arthur-goldsmith-85243913/]
+You can find a compressed timeline of my work experience on my 
+LinkedIn [https://www.linkedin.com/in/arthur-goldsmith-85243913/]
 
 [1;36mMy First Component Framework[0m
-Back in 2009, before Angular, React, Ember, Vue, Svelte... there was ExtJS, SproutCore and, well, jQuery
+Back in 2009, before Angular, React, Ember, Vue, Svelte... 
+there was ExtJS, SproutCore and, well, jQuery
 
-At one of my first serious posts as a developer we were tasked with creating an embedded web applicaiton to configure 
-high-end imaging sensors for system integrators in factories. We started with HTML and a bit of jQuery but quickly 
-realized we needed something more robust.
+At one of my first serious posts as a developer we were tasked with 
+creating an embedded web applicaiton to configure high-end imaging 
+sensors for system integrators in factories. We started with HTML 
+and a bit of jQuery but quickly realized we needed something more 
+robust.
 
-We ended up writing our own component framework, somewhat inspired by ExtJS, and compiled using the Google Closure Compiler
-for file depenency and minification. I'm proud of the work we did, and it taught me invaluable lessons and patterns. 
-It also gave me the opportunity to write my own layout engine, rendering framework, observable class and an early 
-Promise/A+ spec'd promise library (oh the memories).
+We ended up writing our own component framework, somewhat inspired 
+by ExtJS, and compiled using the Google Closure Compiler for file 
+depenency and minification. I'm proud of the work we did, and it 
+taught me invaluable lessons and patterns. 
 
-An old version of the kitchen sink (from 2013) using the framework we built works to this day! Try it through the link below!
+It also gave me the opportunity to write my own layout engine, 
+rendering framework, observable class and an early Promise/A+ spec'd 
+promise library (oh the memories).
+
+An old version of the kitchen sink (from 2013) using the framework 
+we built works to this day! Try it through the link below!
 [https://www.arthurgoldsmith.com/goframework/test.html]
 
 Screenshots:
@@ -47,6 +58,7 @@ Screenshots:
 [https://arthurgoldsmith.com/output-screen-thumb.png]
 
 [1;36mOther Thoughts[0m
-I think I've tried almost every MVC under the sun, and I think I have a reason to hate them all. Postgres > MySQL. 
-Still wondering if there's ever going to be a "killer app" in the blockchain space. I think IPFS is really really cool. 
-Oh, and I actually really liked Google Wave.
+I feel I have a gripe with every MVC I've tried. Postgres > MySQL. 
+Still waiting for that "killer app" in the blockchain space. 
+I think IPFS is really really cool. Oh, and I actually really 
+liked Google Wave.
